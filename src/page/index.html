@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clipboard Shift</title>
+    <script src="interface.js" charset="utf-8"></script>
+    <script src="runtime.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../node_modules/smalltalk/dist/smalltalk.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="buttons" class="container-fluid">
+      <div class="col-sm-12 text-center">
+        <a href="#" onclick="addElement()" class="btn btn-sm btn-success" role="button">Add Clips</a>
+        <a href="#" onclick="promptJSON()" class="btn btn-sm btn-info" role="button">Import JSON</a>
+        <a href="#" onclick="removeAll()" class="btn btn-sm btn-danger" role="button">Remove All Clips</a>
+        <a href="#" onclick="removeNext()" class="btn btn-sm btn-danger" role="button">Remove Next Clip</a>
+        <a href="#" onclick="next()" class="btn btn-sm btn-warning" role="button">Kick and Shift</a>
+      </div>
+    </div>
+    <div id="bin">
+      <div id="group" class="list-group">
+
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- jQuery Fix for Bootstrap -->
+  <script>
+      try {
+          $ = jQuery = module.exports;
+          // If you want module.exports to be empty, uncomment:
+          // module.exports = {};
+      } catch(e) {}
+  </script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
