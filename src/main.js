@@ -18,7 +18,7 @@ ipcMain.on('clipboardSet', function(event, args){
 function createWindow () {
     // Create the browser window.
     win = new BrowserWindow({
-  		width: 400, height: 600,
+  		width: 500, height: 600,
   		backgroundColor: '#000000',
   		resizable: false,
   		movable: true,
