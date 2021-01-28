@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "clipboardy": "^1.2.3",
-    "electron": "^8.2.1",
+    "electron": "^9.4.0",
     "smalltalk": "^2.5.1"
   }
 }
